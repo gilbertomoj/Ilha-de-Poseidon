@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ilha de poseidon</title>
+</head>
+<body>
+    <form action="" id="formulario" method="POST" name="formulario">
+        <label for="">Insira o login</label>
+        <input type="text" name="login">
+        <label for="">Insira a senha</label>
+        <input type="password" name="password">
+        <button type="button" onclick="validar()">Acessar</button>
+        <button onclick="esqueceusenha()">Esqueceu a senha ? Clique aqui</button>
+    </form>
+    <script>
+        function validar(){
+            var login = formulario.login;
+            var password = formulario.password;
+
+            if(login.value == "" && password.value == ""){
+                alert("Por favor, verifique se todos os dados foram preenchidos")
+            }else if(login.value == ""){
+                alert("Por favor, insira o login e tente novamente")
+                nome.focus();
+            }else if(password.value == ""){
+                alert("Por favor, insira a senha e tente novamente")
+                password.focus(); 
+            }else{
+                alert("Seja bem vinde ao Ilha de Poseidon")
+                window.location.href = "./pages/home.html";
+            }
+        }
+
+        function esqueceusenha(){
+            alert("Para recuperar a senha, entre em contato com o restaurante")
+        }
+    </script>
+</body>
+</html>
