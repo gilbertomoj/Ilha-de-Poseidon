@@ -1,0 +1,253 @@
+/*---------------FORM---------------*/
+
+form{
+    animation-name: move-right;
+    animation-duration:2.5s;
+}
+
+form h2{
+    animation-name: move-down;
+    animation-duration:2.5s;
+}
+
+.informacoes{
+    animation-name: move-right;
+    animation-duration:2s;
+}
+
+.assunto, .mensagem{
+    animation-name: move-right;
+    animation-duration:2s;
+}
+
+.container1{
+    animation-name: move-left;
+    animation-duration:2s;
+}
+
+.container1 img,
+.container1 iframe{
+    animation-name: move-left;
+    animation-duration:2.5s;
+}
+
+button{
+    animation-name: move-up;
+    animation-duration:2s;
+}
+
+#enviado{
+    animation-name: move-right;
+    animation-duration:2s;
+}
+
+.txtEnviado,.btnEnviado input{
+    animation-name: fade;
+    animation-duration:3s;
+}
+
+
+
+@keyframes fade{
+    from{
+        opacity: 0;
+        transform: scale(0.8);
+    }to{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes move-left{
+    from{
+        opacity: 0;
+        transform: translateX(-100%);
+    }to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes move-right{
+    from{
+        opacity: 0;
+        transform: translateX(100%);
+    }to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes move-up{
+    from{
+        opacity: 0;
+        transform: translateY(100%);
+    }to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes move-down{
+    from{
+        opacity: 0;
+        transform: translateY(-100%);
+    }to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/*---------------ASSUNTO---------------*/
+
+.assunto {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+select {
+    outline: 0;
+    box-shadow: none;
+    border: 0 !important;
+    flex: 1;
+    padding: 0 .1em;
+    color: #fff;
+    cursor: pointer;
+    transition: all ease 1s;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+#estado {
+    position: relative;
+    display: flex;
+    width: 10px;
+    margin-right: 100px;
+    height: 30px;
+    line-height: 3;
+    background: var(--color1);
+    overflow: hidden;
+    border-radius: .25em;
+}
+
+#estado::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 1em;
+    background: var(--color1);
+    cursor: pointer;
+    pointer-events: none;
+    transition: 1s all ease;
+}
+
+#estado:hover::after {
+    color: var(--color1);
+}
+
+select option {
+    padding: 4px;
+    cursor: pointer;
+}
+
+/*---------------INFORMACOES---------------*/
+
+div.input {
+    margin-bottom: 24px;
+    position: relative;
+}
+
+input:focus{
+    border-bottom: 5px solid var(--color1);
+}
+textarea:focus {
+    border: 3px solid var(--color1);
+}
+
+input,
+button {
+
+    width: 100%;
+
+    padding: 13px 0;
+
+    border: none;
+    border-bottom: 2px solid var(--color1);
+
+    background-color: transparent;
+
+    outline: none;
+
+    color: var(--text-color);
+    font-size: 1em;
+
+}
+
+input ~ label {
+    position: absolute;
+    top: 16px;
+    left: 0;
+
+    transition: .4s;
+}
+
+input:focus,#mensagem:focus {
+    border-color: var(--color1);
+}
+
+input:valid,#mensagem:valid {
+    border-color: green;
+}
+
+input:focus ~ label, input:valid ~ label{
+    transform: translateY(-24px);
+    font-size: 0.8em;
+    letter-spacing: 0.1em;
+}
+
+textarea{
+    outline: 0;
+}
+
+/*---------------ONDAS FOOTER---------------*/
+.waves {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.wave-1 {
+    animation: moveWave1 3s ease-in-out infinite alternate;
+    width: 100%;
+}
+
+@keyframes moveWave1 {
+    from {
+        transform: translateX(-2000px);
+    }
+}
+
+.wave-2 {
+    animation: moveWave2 3s 1.2s ease-in-out infinite alternate;
+}
+
+@keyframes moveWave2 {
+    from {
+        transform: translateX(-1800px);
+    }
+}
+
+.wave-3 {
+    animation: moveWave3 3s 0.7s ease-in-out infinite alternate;
+}
+
+@keyframes moveWave3 {
+    from {
+        transform: translateX(-1600px);
+    }
+}
+

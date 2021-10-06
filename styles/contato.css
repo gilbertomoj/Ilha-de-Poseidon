@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root{
+    --color1: #057fb5;
+    --color2: #007991;
+    --color3: #7DC7dE;
+    --color4: #7DFFD2;
+    --color5: #FFFFFF;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto',sans-serif;
+}
+
+body{
+    background-color: var(--color1);
+}
+
+main{
+    display: flex;
+    padding-bottom: 20px;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.container1{
+    padding: 25px;
+    background-color: var(--color3);
+    border-radius: 25px 0 0 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+.container1 iframe{
+    border-radius: 25px;
+}
+
+.container1 img{
+    width:  375px;
+    height: 300px;
+    border-radius: 25px;
+}
+
+form {
+    background: var(--color3);
+    width: 100%;
+    max-width: 450px;
+    padding: 16px 32px;
+
+    display: flex;
+    flex-direction: column;
+
+    border-radius: 0 25px 25px 0;
+    border: 3px solid var(--color3);
+    z-index: 1;
+}
+
+form h2 {
+    margin-bottom: 10px;
+    text-align: center;
+    letter-spacing: 3px;
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+.span{
+    color: red;
+    font-style: italic;
+    font-size: .8rem;
+}
+
+#spanName,
+#spanEmail,
+#spanTel,
+#spanMsg,
+#spanAst {
+    display: none;
+}
+
+.mensagem{
+    display: flex;
+    flex-direction: column;
+}
+.mensagem label {
+    padding: 15px 0;
+}
+
+.mensagem textarea {
+    padding: 10px;
+    border-radius: 25px;
+    border: 3px solid var(--color1);
+    resize: none;
+    background-color: var(--color3);
+    position: relative;
+}
+
+.envio-socialMedia{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btnSubmit{
+    display: flex;
+    justify-content: center;
+}
+
+#submit{
+    color: var(--color5);
+    width: 50%;
+    margin: 20px auto 0 auto;
+    border-radius: 25px;
+    border: 3px solid var(--color1);
+    cursor: pointer;
+    background-color: var(--color1);
+}
+
+#submit:hover{
+    opacity: .5;
+}
+
+#enviado{
+    width: 375px;
+    height: 590px;
+    padding: 25px 0;
+    background-color: var(--color3);
+    border-radius: 0 25px 25px 0;
+    text-align: center;
+    font-size:1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+#loader {
+    animation: is-rotating 1s infinite;
+    border: 10px solid #e5e5e5;
+    border-radius: 50%;
+    border-top-color: var(--color1);
+    height: 100px;
+    width: 100px;
+}
+
+@keyframes is-rotating {
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+.txtEnviado{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.btnEnviado input{
+    background-color: var(--color1);
+    border-radius: 25px;
+    width:200px;
+    color: var(--color5);
+    cursor: pointer;
+}
+
+.btnEnviado:hover {
+    opacity: .5;
+}
+
+#txtEnviado,
+#btnNovoContato {
+    display: none;
+}
+
+
+#adress{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+#adress h4{
+    border-top: 2px solid var(--color4);
+    padding: 10px 20px 0 20px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    bottom: 0;
+}
+footer .waves{
+    margin-top: -100px;
+    height: 250px;
+    width: 100%;
+}
+
+@media (max-width: 1023px){
+    main{
+        flex-direction: column;
+        align-items: center;
+        background-image: url(../Img/poseidon.jpg);
+        background-repeat:no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .container1{
+        width: 100%;
+        align-items: center;
+        border-radius: 0;
+        background-color: transparent;
+    }
+    .container1 img{
+        display: none;
+    }
+    #form-contato{
+        border-radius: 25px;
+    }
+
+    #adress {
+        text-align: center;
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 375px) {
+    .container1{
+        display: none;
+    }
+    #form-contato{
+        background-color: transparent;
+        border: transparent;
+    }
+    #estado{
+        margin-right: 10px;
+    }
+    #adress {
+        padding-bottom: 0px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
