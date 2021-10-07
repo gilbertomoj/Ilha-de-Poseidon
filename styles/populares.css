@@ -166,3 +166,44 @@ body{
 #card:hover .imgBx03 img{
     max-width: 85%;
 }
+
+#card .imgBx04{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    z-index: 1;
+}
+
+#card .imgBx04 img{
+    
+    max-width: 95%;
+    transition: 0.5s;
+}
+
+#card:hover .imgBx04 img{
+    max-width: 80%;
+}
+
+
+#card .imgBx05{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    z-index: 1;
+    margin-left: -10px;
+}
+
+#card .imgBx05 img{
+    max-width: 120%;
+    transition: 0.5s;
+}
+
+#card:hover .imgBx05 img{
+    max-width: 100%;
+}
