@@ -15,9 +15,14 @@ body{
     font-family: 'Poppins';
 }
 
+#header{
+    margin-bottom: 20px;
+}
+
 img{
     width: 50%;
     border-radius: 250px;
+    margin-top: 10px;
 }
 
 /*Primeira página do cardápio*/
@@ -111,7 +116,7 @@ li span {
 /*--------------PRIMEIRO CARD---------------*/
 
 .card{
-  margin: 100px auto 0;
+  margin: 5px auto 0;
   width: 720px;
   height: 850px;
   perspective: 1000px;
