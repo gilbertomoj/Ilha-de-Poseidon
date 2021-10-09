@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/cardapio.css">
+    <link rel="stylesheet" href="../styles/navbar.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <title>Cardápio</title>
+    <script src="../javascript/cardapio.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="header--area">
+            <div class="header--left">
+                <img src="/Img/poseidon.jpg" alt="bar" />
+                <div class="nav">
+                    <input type="checkbox" id="check">
+                    <ul type="none" class="nav-bar" id="nav-bar">
+                        <li><a href="index.html" target="_blank">HOME</a></li>
+                        <li><a href="login.html" target="_blank">LOGIN</a></li>
+                        <li><a href="reservas.html" target="_blank">RESERVAS</a></li>
+                        <li><a href="cardapio.html" target="_blank">CARDÁPIO</a></li>
+                        <li><a href="populares.html" target="_blank">PRATOS POPULARES</a></li>
+                        <li><a href="contato.html" target="_blank">CONTATO</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header--right">
+                <div class="header--menu">
+                    <label for="check" class="checkbtn">
+                        <i class="fas fa-bars"></i>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!--Página 01-->
+        <div class="card">
+            <div class="card-interno">
+                <div class="card-face card_face-front">
+                    <section class="pag1">
+                        <article class="top-cardapio">
+                            <h2>Cardápio Ilha de Poseidon</h2>
+                            <img src="https://image.freepik.com/vetores-gratis/estilo-de-mascote-de-poseidon_9645-587.jpg"
+                                alt="poseidon.png">
+                        </article>
+            
+                        <article class="main-cardapio">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto distinctio corporis sed possimus
+                                maxime itaque
+                                molestiae eos eveniet veniam, quas quo labore quod fugit consequatur dignissimos fugiat tempore
+                                officiis animi.
+                            </p>
+            
+                            <h3>www.ilhadeposeidon.com</h3>
+            
+                            <ul class="sociais">
+                                <li id="teste">
+                                    <i class="fab fa-instagram"></i>
+                                    Instagram
+                                </li>
+                                <li>
+                                    <i class="fab fa-facebook-f"></i>
+                                    Facebook
+                                </li>
+                                <li>
+                                    <i class="fab fa-whatsapp"></i>
+                                    Whatsapp
+                                </li>
+                            </ul>
+                        </article>
+            
+                    </section>
+                </div>
+    
+                <!--Página 02-->
+                <div class="card-face card_face-back">
+                    <div class="card__content">
+                        <div class="card_header">
+                            <img class="img-menu" src="https://img.icons8.com/fluency/96/000000/restaurant-menu.png"/>
+                            <h2>Menu</h2>
+                        </div>
+                        <div class="card__body">
+                            <article>
+                                    <h2 class="titulo">Pratos Populares</h2>
+                                <div class="pratos">
+                                    <ul class="itens-cardapio">
+                                        <li class="espaco-itens">Peixe frito com batata - R$ 39.99 <br>
+                                            <span class="hide">Peixe, batata frita, limão, tomate e alface</span>
+                                        </li>
+                                        <li class="espaco-itens">Lula - R$ 89.00 <br>
+                                            <span class="hide">Anéis de lula, brócolis e molho verde</span>
+                                        </li>
+                                        <li class="espaco-itens">Camarão ao azeite - R$ 25.99<br>
+                                            <span class="hide">Camarão, caldo de camarão, azeite e legumes</span>
+                                        </li>
+                                        <li class="espaco-itens">Polvo grelhado - R$ 119.99,00 <br>
+                                            <span class="hide">Polvo grelhado, limão, batata e brócolis</span>
+                                        </li>
+                                    </ul>
+                
+                                    <ul class="itens-cardapio">
+                                        <li class="espaco-itens">Mexilhão ao vinho branco - R$ 79.99 <br>
+                                            <span class="hide">Mexilhão, cebola, azeite, vinho branco e pimenta</span>
+                                        </li>
+                                        <li class="espaco-itens">Ostra com vinagrete - R$ 39.99 <br>
+                                            <span class="hide">Ostra, salsinha, limão, azeite e pimenta dedo-de-moça</span>
+                                        </li>
+                                        <li class="espaco-itens">Prato 7
+                                            <span class="hide">descrição do prato com estilo</span>
+                                        </li>
+                                        <li class="espaco-itens">Prato 8
+                                            <span class="hide">descrição do prato com estilo</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </article>
+                
+                            <article>
+                                <h2 id="bebida" class="titulo">Bebidas</h2>
+                                <div class="bebidas">
+                                    <ul class="itens-cardapio">
+                                        <li class="espaco-itens">Suco natural <br>
+                                            <span class="hide">Sabor: acerola, goiaba, cajá, limão</span>
+                                        </li>
+                                        <li class="espaco-itens">Água <br>
+                                            <span class="hide">Natural e gelada</span>
+                                        </li>
+                                    </ul>
+                
+                                    <ul class="itens-cardapio">
+                                        <li class="espaco-itens">Refrigerante <br>
+                                            <span class="hide">Coca-cola, Guaraná, Fanta, Kuat</span>
+                                        </li>
+                                        <li class="espaco-itens">Cerveja <br>
+                                            <span class="hide">Skol, Corona, heineken, budweiser </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

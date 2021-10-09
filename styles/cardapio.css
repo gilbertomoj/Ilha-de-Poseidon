@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+:root {
+  --primary: #7dc7de;
+  --secondary: #48dafe;
+  --dark: #212121;
+  --light: #F3F3F3;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #057fb5;
+    font-family: 'Poppins';
+}
+
+img{
+    width: 50%;
+    border-radius: 250px;
+}
+
+/*Primeira página do cardápio*/
+
+ .pag1{
+    border-radius: 5px;
+    margin: 0 15px 0 0;
+    color: #333;
+} 
+
+.top-cardapio{
+    text-align: center;
+    margin: 30px 0 30px 0;
+}
+
+.main-cardapio{
+    text-align: center;
+}
+
+.sociais{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+
+}
+
+.sociais li {
+    list-style: none;
+}
+
+.sociais li img{
+    width: 15px;
+}
+
+/*Segunda página do cardápio*/
+
+.pag2{
+    border-radius: 5px;
+    width: 50%;
+    background-color: #7dc7de;
+    color: #333;
+}
+
+.img-menu{
+    display: flex;
+    justify-content: center;
+    margin: 30px 0 20px 0;
+}
+
+.pratos{
+    display: flex;
+    justify-content: space-around;
+}
+
+ .espaco-itens{
+    list-style: square;
+    margin-top: 30px;
+} 
+
+.hide{
+    display: none;
+    font-size: 11px;
+}
+
+li span {
+    font-size: 15px;
+}
+.hover{
+    background-color: #122836 ;
+    color: #fff;
+    list-style: none;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 22px;
+}
+
+.titulo{
+    background-color:#057fb5;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px;
+}
+
+.bebidas{
+    display: flex;
+    height: 30vh;
+    justify-content: space-around;
+}
+/*--------------PRIMEIRO CARD---------------*/
+
+.card{
+  margin: 100px auto 0;
+  width: 720px;
+  height: 850px;
+  perspective: 1000px;
+}
+
+.card-interno {
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  position: relative;
+}
+ 
+.card-interno.flip {
+  transform: rotateY(180deg);
+}
+
+
+.card-face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
+}
+
+.card_face-front {
+  background-image: linear-gradient(to bottom right, var(--primary), var(--secondary));
+  display: flex;
+}
+
+/*--------------SEGUNDO CARD---------------*/
+.card_face-back {
+  background-color: var(--light);
+  transform: rotateY(180deg);
+}
+
+.card_header {
+  position: relative;
+  padding: 30px 30px 40px;
+}
+
+.card_header:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: linear-gradient(to bottom left, var(--primary) 10%, var(--secondary) 115%);
+  z-index: -1;
+  border-radius: 0px 0px 50% 0px;
+}
+
+.img-menu {
+  display: block;
+  width: 128px;
+  height: 128px;
+  margin: 0 auto 30px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.card_header h2 {
+  color: #333;
+  font-size: 32px;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+}
+
