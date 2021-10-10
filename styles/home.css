@@ -1,14 +1,19 @@
 .side-menu{
-    color:blueviolet;
+    color:#fff;
     height: 600px;
     width: 400px;
-    background-color: brown;
+    background-color: #007991;
+    border-radius: 20px;
 
 }
 p{
-    color: #7DFFD2;
     font-family: "Poppins" ,sans-serif;
     font-size: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
 }
 
 .titulo{
@@ -23,8 +28,10 @@ p{
 .container{
     height: 600px;
     width: 1200px;
-    background-color: #7DC7DE;
+    background-color: #fff;
     display:flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .landing-img{
@@ -33,12 +40,20 @@ p{
 
 }
 
+.landing-img img{
+    height: 450px;
+    width: 700px;
+    margin-top: 60px;
+    margin-left: 50px;
+}
+
 .side-menu-img{
 width: 400px;
 display:flex;
 justify-content: center;
 margin-top: 50px;
 margin-bottom: 50px;
+
 
 }
 
