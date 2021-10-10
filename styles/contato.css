@@ -220,10 +220,14 @@ footer .waves{
     main{
         flex-direction: column;
         align-items: center;
-        background-image: url(../Img/poseidon.jpg);
+        background-color: #fff;
+        background-image: url(../Img/poseidon.svg);
         background-repeat:no-repeat;
         background-position: center;
         background-size: cover;
+    }
+    form{
+        background: #7dc7debd;
     }
     .container1{
         width: 100%;
@@ -251,6 +255,9 @@ footer .waves{
 }
 
 @media (max-width: 375px) {
+    main{
+        background-size:initial;
+    }
     .container1{
         display: none;
     }
