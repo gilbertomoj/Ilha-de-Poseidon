@@ -2,8 +2,10 @@
 :root {
   --primary: #7dc7de;
   --secondary: #48dafe;
+  --color1: #057fb5;
   --dark: #212121;
   --light: #F3F3F3;
+  --texto: #333;
 }
 
 *{
@@ -11,7 +13,7 @@
     padding: 0;
 }
 body{
-    background-color: #057fb5;
+    background-color: var(--color1);
     font-family: 'Poppins';
 }
 
@@ -30,7 +32,7 @@ img{
  .pag1{
     border-radius: 5px;
     margin: 0 15px 0 0;
-    color: #333;
+    color: var(--texto);
 } 
 
 .top-cardapio{
@@ -62,8 +64,8 @@ img{
 .pag2{
     border-radius: 5px;
     width: 50%;
-    background-color: #7dc7de;
-    color: #333;
+    background-color: var(--secondary);
+    color: var(--texto);
 }
 
 .img-menu{
@@ -91,17 +93,19 @@ li span {
     font-size: 15px;
 }
 .hover{
-    background-color: #122836 ;
-    color: #fff;
+    background-color: #122836;
+    color: var(--light);
     list-style: none;
     border-radius: 5px;
+    width: 390px;
     padding: 5px;
-    font-size: 22px;
+    font-size: 20px;
+    transition: 1.0s
 }
 
 .titulo{
-    background-color:#057fb5;
-    color: #fff;
+    background-color: var(--color1);
+    color: var(--light);
     text-align: center;
     border-radius: 5px;
     padding: 5px;
@@ -116,8 +120,8 @@ li span {
 /*--------------PRIMEIRO CARD---------------*/
 
 .card{
-  margin: 5px auto 0;
-  width: 720px;
+  margin: 5px auto 10px auto;
+  width: 800px;
   height: 850px;
   perspective: 1000px;
 }

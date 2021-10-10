@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 
 :root{
     --color1: #057fb5;
@@ -66,6 +67,7 @@ form h2 {
     letter-spacing: 3px;
     font-weight: 500;
     font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
 }
 
 .span{
@@ -99,12 +101,6 @@ form h2 {
     position: relative;
 }
 
-.envio-socialMedia{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 .btnSubmit{
     display: flex;
     justify-content: center;
@@ -115,13 +111,15 @@ form h2 {
     width: 50%;
     margin: 20px auto 0 auto;
     border-radius: 25px;
-    border: 3px solid var(--color1);
+    
     cursor: pointer;
     background-color: var(--color1);
+    font-family: 'Poppins',sans-serif;
 }
 
 #submit:hover{
-    opacity: .5;
+    background-image: linear-gradient(to right, #057FB5, #7DC7DE, #fff);
+    color: black;
 }
 
 #enviado{
@@ -169,15 +167,15 @@ form h2 {
     cursor: pointer;
 }
 
-.btnEnviado:hover {
-    opacity: .5;
+.btnEnviado input:hover {
+    background-image: linear-gradient(to right, #057FB5, #7DC7DE, #fff);
+    color: black;
 }
 
 #txtEnviado,
 #btnNovoContato {
     display: none;
 }
-
 
 #adress{
     display: flex;
@@ -186,8 +184,24 @@ form h2 {
 }
 
 #adress h4{
-    border-top: 2px solid var(--color4);
     padding: 10px 20px 0 20px;
+    font-family: 'Poppins',sans-serif;
+    border-top: 2px solid var(--color4);
+    font-weight: 500;
+    letter-spacing: 1.px;
+}
+
+#adress .social-media{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+#adress a{
+    font-size: 30px;
+    color: var(--color3)
+}
+#adress a:hover{
+    color: var(--color4)
 }
 
 footer{
@@ -227,6 +241,11 @@ footer .waves{
     #adress {
         text-align: center;
         width: 100%;
+        border-top: 2px solid var(--color4);
+    }
+
+    #adress h4{
+        border: none;
     }
 
 }
