@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../styles/populares.css">
     <link rel="stylesheet" href="../styles/navbar.css">
     
+    <script src="https://kit.fontawesome.com/0c6a11285b.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -19,12 +20,11 @@
                 <div class="nav">
                     <input type="checkbox" id="check">
                     <ul type="none" class="nav-bar" id="nav-bar">
-                        <li><a href="index.html" target="_blank">HOME</a></li>
-                        <li><a href="login.html" target="_blank">LOGIN</a></li>
-                        <li><a href="reservas.html" target="_blank">RESERVAS</a></li>
-                        <li><a href="cardapio.html" target="_blank">CARDÁPIO</a></li>
-                        <li><a href="populares.html" target="_blank">PRATOS POPULARES</a></li>
-                        <li><a href="contato.html" target="_blank">CONTATO</a></li>
+                        <li><a href="index.html" target="_blank">Home</a></li>
+                        <li><a href="reservas.html" target="_blank">Reservas</a></li>
+                        <li><a href="cardapio.html" target="_blank">Cardápio</a></li>
+                        <li><a href="populares.html" target="_blank">Pratos populares</a></li>
+                        <li><a href="contato.html" target="_blank">Contato</a></li>
                     </ul>
                 </div>
             </div>
@@ -37,9 +37,11 @@
             </div>
         </div>
     </header>
+    
+   <a id="seta-inferior" href="#nav-bar"> <img src="../Img/leftroundarrow_izquierda_redondo_3456.png" alt="seta" width="60px" height="60px"> </a>
 
-    <section class="cards">
-        <section class="conteiner-cards">  
+
+    <section class="cards conteiner-cards">  
             <div id="card">
                 <div class="imgBx">
                     <img src="../Img/peixe.png" alt="Peixe com fritas">
@@ -72,12 +74,36 @@
                     <a href="#" class="ingredientes">Contém: Camarão, caldo de camarão, azeite e legumes</a>
                 </div>
             </div>
-        </section>
+    </section>
 
-        <section class="conteiner-cards">  
+
+    <section id="propagandas">
+
+        <div class="conteiner-esquerdo">
+            <div class="imagem-publi">
+                <img src="../Img/fundo1png.png" alt="">
+            </div>
+            <h3>Faça sua reserva em nosso restaurante</h3>
+            <p>Que tal reservar seu local com antecedência?</p>
+            <a href="" id="button">Clique aqui e faça sua reserva</a>
+        </div>
+
+        <div class="conteiner-direito">
+            <div class="imagem-publi">
+                <img src="../Img/fundo2.png" alt="">
+            </div>
+            <h3>Confira nosso cardápio completo</h3>
+            <p>Que tal conferir todas as nossas opções de refeições?</p>
+            <a href="#" id="button">Clique aqui e confira nosso cardápio</a>
+        </div>
+
+    </section>
+
+
+    <section class="cards conteiner-cards">  
             <div id="card">
                 <div class="imgBx04">
-                    <img src="../Img/polvo.png" alt="Peixe com fritas"> <!--ALTERAR ESSA FOTO-->
+                    <img src="../Img/polvo.png" alt="Polvo grelhado"> 
                 </div>
                 <div class="contentBx"> 
                     <h3>Polvo grelhado</h3>
@@ -88,7 +114,7 @@
 
             <div id="card">
                 <div class="imgBx05">
-                    <img src="../Img/mexi.png" alt="Lula"> <!--ALTERAR TAMANHO DA IMAGEM NO PHOTOSHOP-->
+                    <img src="../Img/mexi.png" alt="Mexilhão ao vinho">
                 </div>
                 <div class="contentBx"> 
                     <h3>Mexilhão ao vinho</h3>
@@ -99,19 +125,17 @@
 
             <div id="card">
                 <div class="imgBx03">
-                    <img src="../Img/ostra.png" alt="Ostra">  <!--ALTERAR TAMANHO DA IMAGEM NO PHOTOSHOP-->
+                    <img src="../Img/ostra.png" alt="Ostra com vinagrete"> 
                 </div>
                 <div class="contentBx"> 
-                    <h3>Ostra com vinagrete</h3>
+                    <h3>Ostra ao vinagrete</h3>
                     <h2 class="price">R$39. <small>99</small> </h2>
                     <a href="#" class="ingredientes">Contém: Ostra, salsinhha, limão, azeite e pimenta</a>
                 </div>
             </div>
-        </section>
-
     </section>
 
-   
+
 
 </body>
 </html>

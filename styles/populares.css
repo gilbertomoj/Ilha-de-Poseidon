@@ -11,10 +11,6 @@ body{
     overflow-x: hidden;
 }
 
-.container-fluid{
-    background-color: #122836;
-}
-
 .conteiner-cards{
     display: flex;
     justify-content: center;
@@ -39,7 +35,7 @@ body{
     top: -50%;
     width: 100%;
     height: 100%;
-    background-color: #7DC7dE;;
+    background-color: #7DC7dE;
     transform: skewY(345deg);
     transition: 0.5s;
 }
@@ -179,12 +175,12 @@ body{
 
 #card .imgBx04 img{
     
-    max-width: 95%;
+    max-width: 115%;
     transition: 0.5s;
 }
 
 #card:hover .imgBx04 img{
-    max-width: 80%;
+    max-width: 90%;
 }
 
 
@@ -206,4 +202,118 @@ body{
 
 #card:hover .imgBx05 img{
     max-width: 100%;
+}
+
+#seta-inferior img{
+    width: 60px;
+    height: 60px;
+    margin-left: 1280px;
+    padding-top: 420px;
+    position: fixed;
+    z-index: 5;
+    opacity: 0.5;
+}
+
+/*ESTILIZAÇÂO CONTEINERS MEIO*/
+
+#propagandas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -50px;
+    margin-bottom: 80px;
+}
+
+.conteiner-esquerdo{
+    display: block;
+    background-color: #122836;
+    width: 555px;
+    height: 350px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-right: 50px;
+}
+
+.conteiner-esquerdo h3{
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.conteiner-esquerdo p{
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.conteiner-esquerdo a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/*ESTILIZAÇÂO CONTEINERS BOTÃO*/
+
+#button{
+    background-color: #7DC7dE;
+    color: #fff;
+    height: 50px;
+    border-radius: 5px;
+    margin-left: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/*ESTILIZAÇÂO CONTEINERS IMAGENS*/
+
+.imagem-publi{
+    width: 100%;
+    height: 150px;
+    padding-bottom: 20px;
+}
+
+.imagem-publi img{
+    width: 555px;
+    height: 150px;
+}
+
+
+
+.conteiner-direito{
+    display: block;
+    background-color: #122836;
+    width: 555px;
+    height: 350px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.conteiner-direito h3{
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.conteiner-direito p{
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.conteiner-direito a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
