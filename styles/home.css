@@ -1,0 +1,48 @@
+.side-menu{
+    color:blueviolet;
+    height: 600px;
+    width: 400px;
+    background-color: brown;
+
+}
+p{
+    color: #7DFFD2;
+    font-family: "Poppins" ,sans-serif;
+    font-size: 20px;
+}
+
+.titulo{
+    color:red;
+}
+
+.icon-home{
+    height: 100px;
+    width: 100px;
+}
+
+.container{
+    height: 600px;
+    width: 1200px;
+    background-color: #7DC7DE;
+    display:flex;
+}
+
+.landing-img{
+    height: 600px;
+    width: 800px;
+
+}
+
+.side-menu-img{
+width: 400px;
+display:flex;
+justify-content: center;
+margin-top: 50px;
+margin-bottom: 50px;
+
+}
+
+.side-menu-content{
+width: 400px;
+margin: 50px;
+}
