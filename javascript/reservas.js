@@ -21,11 +21,17 @@ inputs.forEach(input => {
 	input.addEventListener("blur", remcl);
 });
  //alertas
+ var botao = document.getElementById("cancelar");
+ botao.addEventListener("click", function cancela(){
+	alert("Sua reserva foi cancelada!!");
+ })
+ var bt = document.getElementById("reserve");
+ bt.addEventListener("click", function reserv(){
+	 alert("Reserva feita com sucesso!");
+	 
+ })
 function exibalert(){
-	if(document.getElementById("cancelar").focus){
-		alert("Sua reserva foi cancelada!!");
-		return false
-	}
+
 
 	if(document.getElementById("nome").value==""){
 		alert("Campo Nome obrigatório");
@@ -56,7 +62,8 @@ function exibalert(){
 			return false;
 			
 	}
-	alert("Reserva feita com sucesso!");
-	
+
+		
+
 	return true;
 };
