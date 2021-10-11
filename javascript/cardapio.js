@@ -1,7 +1,6 @@
 const card = document.querySelector(".card-interno");
-const cardPai = document.querySelector(".card");
 
-card.addEventListener("click", function (e) {
+card.addEventListener("click", function () {
   card.classList.toggle('flip');
   card.classList.toggle('card2');
 });
