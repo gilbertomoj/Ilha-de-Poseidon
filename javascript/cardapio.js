@@ -1,10 +1,12 @@
 const card = document.querySelector(".card-interno");
+const cardPai = document.querySelector(".card");
 
 card.addEventListener("click", function (e) {
   card.classList.toggle('flip');
+  card.classList.toggle('card2');
 });
 
-pratos = document.querySelectorAll('ul.itens-cardapio li');
+const pratos = document.querySelectorAll('ul.itens-cardapio li');
 
 pratos.forEach(prato => {
     prato.addEventListener("mouseover", function () {
@@ -17,3 +19,13 @@ pratos.forEach(prato => {
     })
 })
 
+const redesSociais = document.querySelectorAll('ul.sociais li');
+
+redesSociais.forEach(redeSocial=>{
+    redeSocial.addEventListener("mouseover", function () {
+        redeSocial.classList.add("hover-sociais");
+    })
+    redeSocial.addEventListener("mouseleave", function () {
+        redeSocial.classList.remove("hover-sociais");    
+    })
+})

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 :root {
   --primary: #7dc7de;
   --secondary: #48dafe;
@@ -11,6 +11,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Poppins', sans-serif;
 }
 body{
     background-color: var(--color1);
@@ -101,6 +102,12 @@ li span {
     font-size: 20px;
     transition: 1.0s
 }
+
+.hover-sociais{
+  font-size: 25px;
+  color: #122836;
+}
+
 
 .titulo{
     background-color: var(--color1);
@@ -196,3 +203,45 @@ li span {
   text-align: center;
 }
 
+/*--------RESPONSIVIDADE*----------*/
+
+@media (max-width:1048px){
+
+  #header{
+    display: none;
+}
+
+.hide{
+  font-size: 12px;
+  display: block;
+}
+
+.sociais{
+  display: block;
+  margin-top: 50px;
+}
+
+.sociais li {
+  list-style: none;
+}
+
+.pratos{
+  display: block;
+  justify-content: space-around;
+}
+
+.espaco-itens{
+  list-style: square;
+  margin: 30px 0 0 30px;
+} 
+
+.card{
+    margin: 0px auto 2px auto;
+    width: 100%;
+    height: 630px;
+}
+
+.card2{
+  height: 1250px;
+}
+}
