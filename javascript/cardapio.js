@@ -6,7 +6,7 @@ card.addEventListener("click", function (e) {
   card.classList.toggle('card2');
 });
 
-pratos = document.querySelectorAll('ul.itens-cardapio li');
+const pratos = document.querySelectorAll('ul.itens-cardapio li');
 
 pratos.forEach(prato => {
     prato.addEventListener("mouseover", function () {
@@ -19,7 +19,7 @@ pratos.forEach(prato => {
     })
 })
 
-redesSociais = document.querySelectorAll('ul.sociais li');
+const redesSociais = document.querySelectorAll('ul.sociais li');
 
 redesSociais.forEach(redeSocial=>{
     redeSocial.addEventListener("mouseover", function () {
