@@ -70,3 +70,9 @@ a:hover{
     transition: 1.5s;
     border-bottom: 3px solid #fff;
 }
+
+@media (min-width:100px) and (max-width: 900px){
+    .conteiner{
+        display: block;
+    }
+}
