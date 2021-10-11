@@ -17,3 +17,13 @@ pratos.forEach(prato => {
     })
 })
 
+redesSociais = document.querySelectorAll('ul.sociais li');
+
+redesSociais.forEach(redeSocial=>{
+    redeSocial.addEventListener("mouseover", function () {
+        redeSocial.classList.add("hover-sociais");
+    })
+    redeSocial.addEventListener("mouseleave", function () {
+        redeSocial.classList.remove("hover-sociais");    
+    })
+})

@@ -102,6 +102,12 @@ li span {
     transition: 1.0s
 }
 
+.hover-sociais{
+  font-size: 25px;
+  color: #122836;
+}
+
+
 .titulo{
     background-color: var(--color1);
     color: var(--light);
