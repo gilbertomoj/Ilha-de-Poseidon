@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Faça sua reserva!</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../styles/reservas.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+</head>
+<body>	
+  <ul class="nav">
+	<img src="../Img/poseidon.svg">
+	<p><a href="home.html">HOME</a></p> 
+	<p><a href="populares.html">PRATOS POPULARES</a></p>
+	<p><a href="cardapio.html">MENU</a></p>
+	<p><a href="contato.html">CONTATO</a></p>
+  </ul>
+	<div class="container">
+	
+		<div class="reserva-content">
+			<form action="" name="form" >
+				
+				<h2 class="title">Faça sua reserva</h2>
+           		<div class="input-div one">
+           		   <div class="i">
+           		   		<i class="fas fa-user"></i>
+           		   </div>
+           		   <div class="div">
+           		   		<h5>Nome do cliente</h5>
+           		   		<input type="text" class="input" id="nome">
+           		   </div>
+           		   </div>
+				 <div class="input-div one">
+					<div class="i">
+						<i class="fas fa-envelope"></i>
+					</div>
+					<div class="div">
+						<h5>Email</h5>
+						<input type="email" class="input" id="email">
+				 </div>	 
+				</div>	
+				<div class="input-div one">
+					<div class="i">
+						<i class="fas fa-user"></i>
+					</div>
+					<div class="div">
+						<h5>Número de pessoas</h5>
+						<input type="text" class="input" id="pessoas">
+				 </div>	 
+				</div>	
+				<div class="input-div one">
+					<div class="i">
+						<i class="fas fa-calendar"></i>
+					</div>
+					<div class="div">
+						<h5></h5>
+						<input type="date" class="input" id="data">
+				 </div>	 
+				</div>	
+				<div class="input-div one">
+					<div class="i">
+						<i class="fas fa-clock"></i>
+					</div>
+					<div class="div">
+						<h5></h5>
+						<input type="time" class="input" id="hora">
+				 </div>	 
+				</div>	
+            	<a href="reservas.html" onclick="exibalert()" id="cancelar">Cancelar reserva?</a>
+            	<input type="submit" class="btn" value="Reservar" onclick="exibalert()" id="reserve">
+            </form>
+        </div>
+    </div>
+    <script type="text/javascript" src="../javascript/reservas.js">
+	</script>
+</body>
+</html>
