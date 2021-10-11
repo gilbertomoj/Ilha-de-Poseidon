@@ -9,6 +9,7 @@
 body{
     display: block;
     overflow-x: hidden;
+    background-color: #057fb5;
 }
 
 .conteiner-cards{
@@ -27,6 +28,7 @@ body{
     border-radius: 20px;
     overflow: hidden;
     margin: 50px;
+    box-shadow: 0 0 0.3em black;
 }
 
 #card::before{
@@ -204,15 +206,6 @@ body{
     max-width: 100%;
 }
 
-#seta-inferior img{
-    width: 60px;
-    height: 60px;
-    margin-left: 1280px;
-    padding-top: 420px;
-    position: fixed;
-    z-index: 5;
-    opacity: 0.5;
-}
 
 /*ESTILIZAÇÂO CONTEINERS MEIO*/
 
@@ -250,14 +243,6 @@ body{
     margin-bottom: 30px;
 }
 
-.conteiner-esquerdo a{
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
 /*ESTILIZAÇÂO CONTEINERS BOTÃO*/
 
 #button{
@@ -282,8 +267,6 @@ body{
     width: 555px;
     height: 150px;
 }
-
-
 
 .conteiner-direito{
     display: block;
@@ -310,10 +293,24 @@ body{
     margin-bottom: 30px;
 }
 
-.conteiner-direito a{
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: 500;
+/*ESTILIZAÇÂO BOTÕES*/
+
+button{
+    cursor: pointer;
+    background-color: cadetblue;
+    color: #fff;
+    margin-left: 110px;
+    border: none;
+    width: 350px;
+    height: 40px;
+    font-size: 14px;
+    font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 1px;
+    border-radius: 10px;
 }
+
+
+/* ANIMAÇÃO JAVA SCRIPT E CSS  */
+
+
