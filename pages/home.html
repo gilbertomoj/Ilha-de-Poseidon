@@ -22,16 +22,29 @@
                 </div>             
                 <div class="side-menu-content">
                     <p><a href="./home.html">Home</a></p>
-                    <p><a href="./cardapio.html">Menu</a></p>
+                    <p><a href="./cardapio.html">Cardápio</a></p>
                     <p><a href="./populares.html">Pratos Populares</a></p>
                     <p><a href="./reservas.html">Reservas</a></p>
-                    <p> <a href="./login.html">Login</a></p>
                     <!-- <p> <a href="./cardapio.html">Cardápio</a></p> -->                  
                     <p><a href="./contato.html">Contato</a></p>
+                    <p><a onclick="sair()">Sair</a></p>
                 </div>
             </div>
           
         </div>
  
+        <script>
+            function sair(){
+            var r = confirm("Você tem certeza que deseja sair?");
+            if (r==true){
+                window.location.href = "./../index.html";
+            }else{
+                window.location.href = "#";
+
+            }
+        }
+
+
+        </script>
 </body>
 </html>

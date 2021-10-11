@@ -28,7 +28,7 @@ a{
 .container{
     height: 600px;
     width: 1200px;
-    background-color: #fff;
+    background-color: #057fb5;;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -60,4 +60,13 @@ margin-bottom: 50px;
 .side-menu-content{
 width: 400px;
 margin: 50px;
+}
+
+body{
+    background-color: #057fb5;
+}
+
+a:hover{
+    transition: 1.5s;
+    border-bottom: 3px solid #fff;
 }
