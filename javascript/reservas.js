@@ -25,11 +25,6 @@ inputs.forEach(input => {
  botao.addEventListener("click", function cancela(){
 	alert("Sua reserva foi cancelada!!");
  })
- var bt = document.getElementById("reserve");
- bt.addEventListener("click", function reserv(){
-	 alert("Reserva feita com sucesso!");
-	 
- })
 function exibalert(){
 
 
@@ -61,6 +56,8 @@ function exibalert(){
 			document.getElementById("hora").focus();
 			return false;
 			
+	}else{
+		alert("Reserva feita com sucesso!");
 	}
 
 		
